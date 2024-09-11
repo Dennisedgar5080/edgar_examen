@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contacto - CleanEdgarPro Servicios</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .contain {
+      width: 100%;
+      max-width: 900px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    header {
+      background: url('img/bg.jpg') center center/cover no-repeat;
+      height: 250px;
+      position: relative;
+    }
+
+    header:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .logo-text {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: 50px;
+      color: white;
+    }
+
+    .logo-text img {
+      width: 100px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+    }
+
+    .logo-text h2 {
+      margin-top: 15px;
+      font-size: 32px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .content {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .content p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .form-contact {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-contact label {
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 8px;
+      text-align: left;
+      color: #444;
+    }
+
+    .controls {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    .controls:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .files {
+      border: 1px dashed #007bff;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #007bff;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .checkbox input {
+      margin-right: 10px;
+    }
+
+    .buttons {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 15px 50px;
+      border-radius: 8px;
+      font-size: 18px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .buttons:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 14px;
+      color: #777;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contain">
+    <header>
+      <div class="logo-text">
+        <img src="img/logo.png" alt="Logo de CleanEdgarPro">
+        <h2>CleanEdgarPro Servicios</h2>
+      </div>
+    </header>
+
+    <div class="content">
+      <p>Especialistas en limpieza profesional para oficinas, industrias, hospitales y residencias. ¡Confía en CleanEdgarPro para un ambiente impecable!</p>
+
+      <form class="form-contact" action="#" method="post">
+        <label for="nombres">Nombres</label>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Escribe tus nombres" required>
+
+        <label for="apellidos">Apellidos</label>
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Escribe tus apellidos" required>
+
+        <label for="correo">Correo Electrónico</label>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Escribe tu correo electrónico" required>
+
+        <label for="direccion">Dirección, Croquis (Foto)</label>
+        <input class="files" type="file" name="direccion" id="direccion" accept="image/*">
+
+        <div class="checkbox">
+          <input type="checkbox" name="terminos" id="terminos" required>
+          <label for="terminos">Acepto los <a href="#">Términos y Condiciones</a></label>
+        </div>
+
+        <input class="buttons" type="submit" value="Enviar">
+      </form>
+    </div>
+    
+    <footer>
+      © 2024 CleanEdgarPro Servicios. Todos los derechos reservados. <a href="#">Política de Privacidad</a>
+    </footer>
+  </div>
+
+</body>
+</html>
